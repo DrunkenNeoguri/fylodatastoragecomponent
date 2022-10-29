@@ -6,14 +6,11 @@ This is a solution to the [Fylo data storage component challenge on Frontend Men
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)pg
+  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -30,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
-- [Live Site URL](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/18th-challenge-fylo-data-storage-component-6E28Stt4My)
+- [Live Site URL](https://drunkenneoguri.github.io/fylodatastoragecomponent/)
 
 ## My process
 
@@ -39,15 +36,8 @@ Users should be able to:
 
 - HTML5
 - CSS3
-- [Tailwind CSS](https://tailwindcss.com/) - CSS Framework
-
-### What I learned
-
-### Useful resources
 
 ## Author
 
 - Frontend Mentor - [@drunken_neoguri](https://www.frontendmentor.io/profile/DrunkenNeoguri)
 - Twitter - [@develop_neoguri](https://twitter.com/develop_neoguri)
-
-## Acknowledgments

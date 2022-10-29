@@ -1,0 +1,265 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+:root {
+  --bg--gradient: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  --pale--blue: hsl(243, 100%, 93%);
+  --grayish--blue: hsl(229, 7%, 55%);
+  --dark--blue: hsl(228, 56%, 26%);
+  --very--dark--blue: hsl(229, 57%, 11%);
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+html {
+  background-color: var(--very--dark--blue);
+  background-image: url("./images/bg-mobile.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 100%;
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 5rem auto;
+}
+
+.container {
+}
+
+/* logo box */
+
+.logobox {
+  background: var(--dark--blue);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  border-radius: 0.5rem 5rem 0.5rem 0.5rem;
+  padding-left: 3rem;
+  margin: 1rem 0;
+
+  width: 23rem;
+  height: 14rem;
+
+  box-sizing: border-box;
+}
+
+.logobox > img {
+  margin: 1rem 0;
+}
+
+.logobox--buttonbox {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  margin: 1rem 0;
+}
+
+.logobox--buttonbox__button {
+  background: var(--very--dark--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 0;
+  margin: 0;
+
+  width: 3.5rem;
+  height: 3.5rem;
+
+  cursor: pointer;
+}
+
+/* storage box */
+
+.storagebox {
+  background: var(--dark--blue);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+
+  width: 23rem;
+  height: 11.5rem;
+
+  box-sizing: border-box;
+}
+
+.storagebox > p {
+  color: #ffffff;
+}
+
+.storagebox > p > span {
+  font-weight: 700;
+}
+
+.storagebox--gaugebox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.storagebox--gaugebox__gauge {
+  background: var(--very--dark--blue);
+
+  display: block;
+
+  border-radius: 3rem;
+
+  width: 18.5rem;
+  height: 1.5rem;
+  margin: 0 auto;
+}
+
+.storagebox--gaugebox__gauge > div {
+  background: var(--bg--gradient);
+
+  position: relative;
+  border-radius: 3rem;
+  margin: 0.25rem;
+
+  width: calc(18rem * 0.815);
+  height: 1rem;
+}
+
+.storagebox--gaugebox__gauge > div > span {
+  background: #ffffff;
+
+  position: absolute;
+  right: 0;
+
+  border-radius: 9999px;
+  width: 0.8rem;
+  height: 0.8rem;
+
+  transform: translateX(-0.2rem) translateY(0.1rem);
+}
+
+.storagebox--gaugebox__minmax {
+  display: flex;
+  justify-content: space-between;
+  width: 18.5rem;
+  color: #ffffff;
+  margin: 0.5rem auto;
+}
+
+.remainbox {
+  background: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  color: var(--grayish--blue);
+  font-weight: 700;
+  text-transform: uppercase;
+
+  border-radius: 1rem;
+
+  z-index: 2;
+  width: 13rem;
+  height: 5rem;
+  transform: translateY(8rem);
+}
+
+.remainbox--triangle {
+  display: none;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 3rem 3rem 0;
+  border-color: transparent #ffffff transparent transparent;
+}
+
+.remainbox > span {
+  color: var(--very--dark--blue);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.attribution {
+  color: #ffffff;
+  margin: 5rem 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  font-size: 11px;
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 500px) {
+  html {
+    background-image: url("./images/bg-desktop.png");
+  }
+  body {
+    margin: 25vh 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 1rem;
+  }
+
+  .storagebox {
+    width: 38.5rem;
+    transform: none;
+    align-items: flex-start;
+    padding: 0 3rem;
+  }
+
+  .storagebox--gaugebox__gauge {
+    width: 100%;
+  }
+
+  .storagebox--gaugebox__gauge > div {
+    width: calc(100% * 0.815);
+  }
+
+  .storagebox--gaugebox__minmax {
+    width: 100%;
+  }
+
+  .storagebox--gaugebox__gauge > div > span {
+    transform: translateX(-0.2rem) translateY(0.1rem);
+  }
+
+  .remainbox {
+    transform: translateX(22rem) translateY(-11rem);
+  }
+
+  .remainbox--triangle {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    transform: translateX(26.99rem) translateY(-8rem);
+  }
+}

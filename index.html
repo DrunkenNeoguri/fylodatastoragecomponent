@@ -7,50 +7,57 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-      }
-    }
-  </script>
 
   <title>Frontend Mentor | Fylo data storage component</title>
+  <link href="./style.css" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-
-    * {
-      font-family: "Raleway", sans-serif;
-      font-size: 14px;
-      font-weight: 400;
-    }
-
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
+  <div class="container">
+    <div class="logobox">
+      <img src="./images/logo.svg" alt="Fylo Data Storage Logo">
+      <div class="logobox--buttonbox">
+        <button class="logobox--buttonbox__button">
+          <img src="./images/icon-document.svg" alt="Flyo Data Document Icon">
+        </button>
+        <button class="logobox--buttonbox__button">
+          <img src="./images/icon-folder.svg" alt="Flyo Data Folder Icon">
+        </button>
+        <button class="logobox--buttonbox__button">
+          <img src="./images/icon-upload.svg" alt="Flyo Data Upload File Icon">
+        </button>
+      </div>
+    </div>
 
-  You’ve used 815 GB of your storage
 
-  185 GB Left
+    <div class="storagebox">
+      <p>You’ve used <span>815 GB</span> of your storage</p>
+      <div class="storagebox--gaugebox">
+        <div class="storagebox--gaugebox__gauge">
+          <div><span></span></div>
+        </div>
+        <div class="storagebox--gaugebox__minmax">
+          <span>0 GB</span>
+          <span>1000 GB</span>
+        </div>
 
-  0 GB
-  1000 GB
+      </div>
+    </div>
+  </div>
+
+  <div class="remainbox">
+    <span>185 </span>&nbsp;&nbsp;GB Left
+  </div>
+  <div class="remainbox--triangle"></div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">develop_neoguri</a>.
   </div>
+
+
+
 </body>
 
 </html>
