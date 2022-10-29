@@ -22,8 +22,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop Version](./screenshot.jpg)
-![Mobile Version](./screenshot.jpg)
+**Desktop Version**
+![Desktop Version](https://github.com/DrunkenNeoguri/fylodatastoragecomponent/blob/main/sample/desktop-sample.jpg?raw=true)
+
+**Mobile Version**
+
+![Mobile Version](https://github.com/DrunkenNeoguri/fylodatastoragecomponent/blob/main/sample/mobile-sample.jpg?raw=true)
 
 ### Links
 
